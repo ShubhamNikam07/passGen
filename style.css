@@ -1,0 +1,75 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+.wrapper1{
+    background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
+    
+}
+.wrapper2{
+    border-radius: 2rem;
+    
+}
+
+.display::placeholder{
+    color: #BC78EC;
+    user-select: none;
+   
+}
+
+.indicatorcolor{
+    box-shadow: 1px 1px 20px  #BC78EC;
+}
+
+.checkboxdiv input{
+    appearance: none;
+    width:18px; 
+    height: 18px;
+    cursor: pointer;
+    border: 1px solid #BC78EC;
+    border-radius: 0.35rem;
+    margin-right: 10px;
+}
+.checkboxdiv input:checked{
+    background-color: #BC78EC;
+}
+.checkboxdiv input:checked::before{
+    content: '✔'; 
+}
+
+label{
+    font-weight:700;
+
+}
+
+.slider{
+    appearance:none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    width: 20rem;
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #BC78EC;
+}
+
+.slider::-moz-range-thumb{
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #BC78EC;
+}
+
+
+.showhidden{
+
+}

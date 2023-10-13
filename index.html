@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>password gerenrator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper1 w-full h-screen flex align-center justify-center relative ">
+        <div class="wrapper2 flex flex-col w-5/12  justify-center align-center absolute bottom-1/4 rounded-xl bg-purple-100 p-4 gap-4">
+            <div class="heading opacity-90   tracking-wider align-center text-4xl font-semibold    text-center">Password Generator</div>
+            <div class="copysec flex  justify-evenly">
+                <input class="display text-black items-evenly p-2 bg-transparent font-semibold" readonly placeholder="P A S S W O R D "></input>
+                    <div class="ficon">
+                        <i class="fa-solid fa-copy cursor-pointer text-purple-800 "></i>
+                        <span class="showhidden hidden absolute texr-black">copied</span>
+                    </div>
+            </div>
+            <div class="card flex flex-col justify-evenly gap-4 ">
+                <div class="flex justify-evenly text-xl tracking-wider font-semibold">
+                    <label for="passlen">password length</label>
+                    <div id="passlen">120</div>
+                </div>
+                <div class="line self-center pb-2 pt-2">
+                    <input type="range" min="1" max="20" class="slider" rangehandler>
+                </div>
+                <div class="checkboxdiv flex flex-col justify-center">
+                <div>
+                        <input type="checkbox" checked id="include1">
+                        <label for="include1"> include Uppercase Letters</label>
+                </div>
+                    <div>
+                        <input type="checkbox" id="include2">
+                        <label for="include2">include Lowercase Letters</label>
+                    </div>
+                <div>
+                    <input type="checkbox" id="include3">
+                    <label for="include3">include Numbers</label> 
+                </div>
+                    <div>
+                        <input type="checkbox" id="include4">
+                    <label for="include4">include Symbols</label> 
+                    </div>
+                </div>
+                <div class="strenindicator flex justify-evenly ">
+                    <h2 class="text-xl tracking-wider font-semibold text-purple-500 ">Strength</h2>
+                    <div class="indicatorcolor z-10 rounded-full w-6 "></div>
+                </div>
+                <div class="genpass cursor-pointer self-center bg-purple-400 text-white p-2 rounded-xl drop-shadow-xl  mt-2 ">
+                    Generate Password
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
